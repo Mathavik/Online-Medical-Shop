@@ -1,0 +1,127 @@
+/* Make sure the entire page uses flex layout */
+.product-details-container {
+    position: relative;
+    width: 100%; 
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Ensure space is distributed between content and footer */
+}
+
+/* Main content section */
+.productdetails-content {
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ced3d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    flex: 1; /* Allow content to grow but without forcing scrolling */
+    box-sizing: border-box; /* Prevent padding from affecting layout */
+}
+
+/* Product image styling */
+.product-details-image {
+    border: 1px solid #646262;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Product description and details */
+.product-details {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Header and text styling */
+.product-details h3 {
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+/* Add to cart button styling */
+.add-cart-button {
+    margin-top: 20px;
+}
+
+.add-cart-button button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-cart-button button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .productdetails-content {
+        padding: 10px;
+    }
+
+    .product-details-image {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .product-details h3 {
+        font-size: 18px;
+    }
+
+    .product-details p {
+        font-size: 14px;
+    }
+
+    .add-cart-button button {
+        width: 100%;
+    }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .productdetails-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .product-details-image {
+        width: 40%;
+    }
+
+    .product-details {
+        width: 55%;
+        text-align: left;
+    }
+
+    .add-cart-button {
+        margin-top: 10px;
+    }
+
+    .add-cart-button button {
+        width: auto;
+    }
+}
+
+/* Footer styling */
+/* footer {
+    margin-top: 20px; Space between footer and content
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+} */

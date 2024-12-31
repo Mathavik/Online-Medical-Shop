@@ -1,0 +1,131 @@
+/* General styles */
+.product-heading {
+  color: blue;
+  margin: 3%;
+}
+
+.container-fluid1 {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  /* padding: 10px 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.navbar-toggle {
+  display: none; /* Initially hidden on larger screens */
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.ul-navbar-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Dropdown styles */
+.username {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.username:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .ul-navbar-nav {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+  }
+
+  .ul-navbar-nav.open {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .navbar-toggle {
+    display: block; /* Show toggle button */
+  }
+
+  .nav-item {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 18px; /* Adjust font size on mobile */
+  }
+
+  .username {
+    width: 100%;
+  }
+}

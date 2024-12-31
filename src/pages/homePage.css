@@ -1,0 +1,111 @@
+.homepage-container {
+    /* margin: 20px; */
+    text-align: center;
+}
+
+.imag1 {
+    /* width: 100%; */
+    height: 70vh;
+    background-size: cover;
+    /* object-fit: cover; */
+}
+
+.imag {
+    width: 100%;
+    padding:30px;
+    margin: auto;
+    display: block;
+    height: 60vh;
+}
+.imag2{
+    padding: 2px;
+}
+.shopby-categories{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.shopby-categories-title{
+    margin-left: 2%;
+    text-align: left;
+    padding-bottom: 5%;
+}
+.products-Item{
+    padding-top: 5%;
+}
+.products-Item-title{
+    text-align: left;
+    margin-left: 2%;
+}
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feature {
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: rgb(46, 4, 80); /* Adjust text color */
+    text-align: center;
+    /* border: 2px #770c0c; */
+    /* background-color: ; */
+    padding: 10px 10px;
+    font-size: 2rem; /* Adjust font size as needed */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1024px) {
+    .imag1 {
+        height: 40vh; /* Adjust image height for tablets */
+    }
+    .imag {
+        height: 40vh; /* Adjust product image height */
+    }
+    .products-Item-title, .shopby-categories-title {
+        margin-left: 5%; /* Center align for smaller screens */
+        text-align: center;
+    }
+}
+
+/* Styling for mobile screens */
+@media (max-width: 464px) {
+    .imag1 {
+        height: 30vh; /* Further adjust height for mobile */
+    }
+    .imag {
+        height: 30vh;
+    }
+    .shopby-categories, .products-Item {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .shopby-categories-title, .products-Item-title {
+        margin-left: 0;
+        text-align: center;
+    }
+    .imag2 {
+        width: 80%;
+        margin: auto;
+    }
+}

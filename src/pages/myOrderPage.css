@@ -1,0 +1,173 @@
+/* Container for the MyOrderPage */
+.myorderpage-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Link to the product page */
+  .productPage-link {
+    margin: 20px 0;
+  }
+  
+  .productPage-link a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .productPage-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Heading for the order list */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Table Styling */
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  /* Table Header Styling */
+  .order-table thead tr {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .order-table th,
+  .order-table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Status Tag Styling */
+  .status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+  }
+  
+  .status.pending {
+    background-color: #f0ad4e;
+  }
+  
+  .status.paid {
+    background-color: #5cb85c;
+  }
+  
+  /* View Button Styling */
+  .view-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .view-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Empty Orders Section */
+  .empty-orders {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .empty-orders h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .empty-orders p {
+    font-size: 1rem;
+  }
+  
+  .empty-orders a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .empty-orders a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design for Table */
+  @media (max-width: 1024px) {
+    .order-table th,
+    .order-table td {
+      padding: 8px;
+    }
+  
+    .view-button {
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .order-table {
+      font-size: 0.9rem;
+    }
+  
+    .order-table th,
+    .order-table td {
+      padding: 8px 10px;
+    }
+  
+    .view-button {
+      font-size: 13px;
+      padding: 4px 8px;
+    }
+  
+    .myorderpage-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .order-table {
+      font-size: 0.8rem;
+      margin: 10px 0;
+    }
+  
+    .order-table th,
+    .order-table td {
+      padding: 6px 8px;
+    }
+  
+    .view-button {
+      font-size: 12px;
+      padding: 3px 6px;
+    }
+  
+    .myorderpage-container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    .empty-orders h2 {
+      font-size: 1.2rem;
+    }
+  
+    .empty-orders p {
+      font-size: 0.9rem;
+    }
+  }
+  

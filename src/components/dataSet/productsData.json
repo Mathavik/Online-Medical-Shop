@@ -1,0 +1,14 @@
+{
+  "Ayurveda": {
+    "medicineName": "Herbal Tablets",
+    "brand": "AyurCare",
+    "stock": "Available",
+    "image": "path_to_ayurveda_image.jpg"
+  },
+  "Siddha": {
+    "medicineName": "Natural Balm",
+    "brand": "SiddhaPro",
+    "stock": "Limited",
+    "image": "path_to_siddha_image.jpg"
+  }
+}
